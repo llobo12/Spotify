@@ -17,6 +17,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	
 <meta name="description" content="Spotify is a music, podcast, and video streaming service that was officially launched on 7 October 2008. It is developed by startup Spotify AB in Stockholm, Sweden.">
@@ -180,42 +181,42 @@
 <div class="container">
     	<div class="row">
     		<article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album1_solo.jpg" class="img-responsive" alt="">
+          <a href="img/album1_solo.jpg" data-fancybox="galeria"><img src="img/album1_solo.jpg" class="img-responsive" alt="caption"></a>
     			<h4 id="song">Solo</h4>
     			<p>El Nene La Amenaza,...</p>
           <span><a href="a">PLAY NOW</a></span>
     		</article>
 
     		<article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album2_Sensualidad.jpg" class="img-responsive" alt="">
+          <a href="img/album2_Sensualidad.jpg" data-fancybox="galeria"><img src="img/album2_Sensualidad.jpg" class="img-responsive" alt="caption"></a>
     			<h4>Sensualidad</h4>
     			<p>Bad Bunny, Prince Ro...</p>
           <span><a href="a">PLAY NOW</a></span>
     		</article>
 
     		<article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album3_ellasepreparo.jpg" class="img-responsive" alt="">
+          <a href="img/album3_ellasepreparo.jpg" data-fancybox="galeria"><img src="img/album3_ellasepreparo.jpg" class="img-responsive" alt="caption"></a>
     			<h4>Ella se preparó</h4>
     			<p>Dj Ozuna</p>
           <span><a href="a">PLAY NOW</a></span>
     		</article>
 
     		<article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album4_mayores.jpg" class="img-responsive" alt="">
+          <a href="img/album4_mayores.jpg" data-fancybox="galeria"><img src="img/album4_mayores.jpg" class="img-responsive" alt="caption"></a>
     			<h4>Mayores</h4>
     			<p>Becky G, Bad Bunny</p>
           <span><a href="a">PLAY NOW</a></span>
     		</article>
 
         <article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album4_vuelve.jpg" class="img-responsive" alt="">
+          <a href="img/album4_vuelve.jpg" data-fancybox="galeria"><img src="img/album4_vuelve.jpg" class="img-responsive" alt="caption"></a>
     			<h4>Vuelve</h4>
     			<p>Daddy Yankee, Bad B...</p>
           <span><a href="a">PLAY NOW</a></span>
     		</article>
 
         <article class="col-md-2 col-sm-4 col-xs-6">
-          <img src="img/album5_merehuso.jpg" class="img-responsive" alt="">
+          <a href="img/album5_merehuso.jpg" data-fancybox="galeria"><img src="img/album5_merehuso.jpg" class="img-responsive" alt="caption"></a>
     			<h4>Me Rehúso</h4>
     			<p>Danny Ocean</p>
           <span><a href="a">PLAY NOW</a></span>
@@ -366,6 +367,43 @@
 </footer>
 	
 	<script src="js/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+	<script src="js/gmaps.js"></script>
 	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+	
+	$(window).load(function(){
+		mostrarMapa();
+	});
+
+	function mostrarMapa(){
+		var map;
+		var mLat = 14.049114; //latitud
+		var mLng = -87.182423; //longitud
+	
+
+		map = new GMaps({
+			div: '#map', //id del <div> donde se mostrará el mapa.
+			lat: mLat,
+			lng: mLng,
+			zoom: 16
+		  });
+		map.addMarker({
+		  lat: mLat,
+		  lng: mLng,
+		  title: 'Nuestra ubicación en gMaps',
+		  infoWindow: {
+			content: '<p>UNITEC - Univ. Tecnológica de Honduras</p>'
+		  }
+		});	
+		
+	}
+});
+</script>
+	
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a373236f11abd91"></script>
 </body>
 </html>
