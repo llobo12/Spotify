@@ -61,6 +61,7 @@ header{
 	margin-top: 20px;
 	border-radius: 40px;
 	background-color: #1db954;
+	border: none;
 	letter-spacing: 2px;
 }
 
@@ -70,7 +71,7 @@ header{
 	margin-top: 20px;
 	padding: 18px 48px 16px;
 	background-color: #74D781;
-	border: solid 2px #74D781;
+	border: none;
 }
 
 #sec-listen .btn-success{
@@ -82,6 +83,7 @@ header{
 	margin-top: 20px;
 	border-radius: 40px;
 	background-color: #1db954;
+	border: none;
 	letter-spacing: 2px;
 }
 
@@ -91,7 +93,7 @@ header{
 	margin-top: 20px;
 	padding: 18px 0px 16px;
 	background-color: #74D781;
-	border: solid 2px #74D781;
+	border: none;
 }
 
 .btn-default{
@@ -106,8 +108,6 @@ header{
 	letter-spacing: 2px;
 	color: #1db954;
     border: solid 2px #1db954;
-    background-color: transparent;
-	
 }
 
 .btn-default:hover{
@@ -297,7 +297,6 @@ footer li a:hover{
 
 #sec-sign .btn{
 	font-family: Circular,Helvetica,Arial,sans-serif;
-	padding: 17px 48px;
     font-size: 14px;
     line-height: 1;
     border-radius: 500px;
@@ -482,4 +481,214 @@ h1{
 	color: #EBEBEC;
 	padding-top: 0px;
 	text-decoration: underline;
+}
+
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#saying{
+	background: #f8f8f8;
+}
+
+#saying .links{
+font-family: Circular,Helvetica,Arial,sans-serif;
+  color: #000;
+  font-weight: bold;
+	font-size: 12px;
+	text-decoration: underline;
+	letter-spacing: 1px;
+}
+
+#saying .links:hover{
+font-family: Circular,Helvetica,Arial,sans-serif;
+  color: #21D470;
+  font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#saying p{
+	font-size: 12px;
+	font-weight: 400;
+}
+
+#saying h2{
+	margin-bottom: 50px;
+}
+
+#saying h3{
+	font-size: 24px;
+	font-weight: 900;
+letter-spacing: -.015em;
+	padding-top: 30px;
+}
+
+#saying .imagen{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+#saying .imagen2{
+	margin-left: -50px;
+	margin-right: 0px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+
+#saying .row{
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+
+#saying #myCarousel{
+	margin-bottom: 50px;
+	color: #000;
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+}
+
+#saying .carousel-caption{
+	color: #000;
+}
+
+.carousel-caption{
+	text-shadow: none;
+}
+
+#saying .space{
+	margin-left: 120px;
+	margin-right: 120px;
+	text-align: center;
+}
+
+.carousel-control.right{
+	background-image: none;
+	background-color: none;
+	opacity: 100;
+}
+
+.carousel-control.left{
+	background-image: none;
+	background-color: none;
+	opacity: 100;
+}
+
+
+.carousel-control{
+	color: #000;
+	background-color: transparent;
+}
+
+.texto-carousel{
+	align-items: center;
+	min-height: 300px;
+}
+
+#wrapped{
+	background-image: url( ../img/circulitos-07.png);
+	text-align: left;
+	color: #fff;
+	background-color: #f573a0;
+	padding: 150px 0 130px;
+	background-position: 50%;
+background-repeat: no-repeat;
+	background-size: 1500px;
+}
+
+
+#wrapped .btn-success{
+	font-family: Circular,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	padding: 14px 20px 14px;
+	line-height: 1;
+	margin-top: 20px;
+	border-radius: 40px;
+	background-color: #000;
+	border: none;
+	letter-spacing: 2px;
+}
+
+
+#wrapped .btn-success:hover{
+	background-color: #252525;
+	border: none;
+
+}
+
+
+#artistas p{
+	font-size: 20px;
+}
+
+#artistas{
+	align-items: center;
+}
+
+#artistas h2{
+	padding-top: 60px;
+}
+
+
+h4 .verde{
+	color: #000000;
+	text-decoration: none;
+}
+
+h4 .verde:hover{
+  	color: #21D470;
+	text-decoration: none;
+}
+
+#blog-post h3{
+	font-size: 24px;
+	font-weight: 900;
+letter-spacing: -.015em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#blog-post{
+	padding-bottom: 30px;
+}
+
+#lets-go{
+	background-image: url( ../img/fondo-morado.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	color: #fff;
+	background-size: 1500px;
+}
+
+#lets-go .btn-success{
+	font-family: Circular,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	padding: 14px 20px 14px;
+	line-height: 1;
+	margin-top: 20px;
+	border-radius: 40px;
+	background-color: transparent;
+	border: solid 2px #fff;
+	letter-spacing: 2px;
+}
+
+
+#lets-go .btn-success:hover{
+	background-color: #fff;
+	border: solid 2px #fff;
+	color: #000;
+}
+
+#lets-go h3{
+	color: #FFFFFF;
 }
